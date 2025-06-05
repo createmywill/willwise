@@ -44,23 +44,25 @@
 
 
 
-  <section id="willForm" class="bg-dark py-5">
-    <div class="container">
-      <h2 class="mb-4">Will Creation Form</h2>
-      <form>
-        <div class="mb-3">
-          <label for="fullName" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="fullName" required>
-        </div>
-        
-        <div class="mb-3">
-          <label for="beneficiaries" class="form-label">Beneficiaries</label>
-          <textarea class="form-control" id="beneficiaries" rows="3" placeholder="List of beneficiaries and allocations"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Generate Will</button>
-      </form>
-    </div>
-  </section>
+ <section id="willForm" class="bg-dark py-5">
+  <div class="container text-white">
+    <h2 class="mb-4">Will Creation Form</h2>
+    <form>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="beneficiaries" class="form-label">Beneficiaries</label>
+        <textarea class="form-control" id="beneficiaries" rows="3" placeholder="List of beneficiaries and allocations"></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-success">Get Started</button>
+    </form>
+  </div>
+</section>
+
 
   <section id="calculator" class="bg-light py-5">
     <div class="container">
@@ -68,11 +70,11 @@
       <form onsubmit="calculateCost(event)">
         <div class="row g-3">
           <div class="col-md-4">
-            <label for="estateValue" class="form-label">Total Estate Value ($)</label>
+            <label for="estateValue" class="form-label">Total Estate Value (R)</label>
             <input type="number" class="form-control" id="estateValue" required>
           </div>
           <div class="col-md-4">
-            <label for="debtValue" class="form-label">Outstanding Debts ($)</label>
+            <label for="debtValue" class="form-label">Outstanding Debts (R)</label>
             <input type="number" class="form-control" id="debtValue">
           </div>
           <div class="col-md-4">
